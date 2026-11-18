@@ -1,1 +1,3 @@
-# nodejs-gitaction
+npm install
+npm start
+npm test
