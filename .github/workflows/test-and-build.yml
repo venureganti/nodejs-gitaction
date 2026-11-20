@@ -13,5 +13,17 @@ jobs:
       - name: installing dependencies
         run: npm install
       - name: Testing app
-        run: npm test    
-        
+        run: npm test 
+   build:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Getting code
+        uses: actions/checkout@v6
+      - name: installing node
+        uses: actions/setup-node@v6
+        with:
+            node-version: '22.15.1'
+      - name: installing dependencies
+        run: npm install
+      - name: build app
+        run: npm run build   
