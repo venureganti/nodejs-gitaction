@@ -15,6 +15,7 @@ jobs:
       - name: Testing app
         run: npm test 
    build:
+    needs: test
     runs-on: ubuntu-slim
     steps:
       - name: Getting code
